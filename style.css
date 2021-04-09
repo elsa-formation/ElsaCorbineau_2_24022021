@@ -152,17 +152,17 @@ margin-top: 10px;
 /**********Vignettes**********/
 
 .hébergements {
+    background-color: #F2F2F2;
+}
+
+.grille-hébergement {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
+    justify-content: space-evenly;
 }
 
 .populaires {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
+background-color: #F2F2F2;
 }
 
 .activités {
@@ -175,12 +175,13 @@ margin-top: 10px;
 .hébergements .photo  {
     padding: 5px;
     background: #fff;
+    width: 30%;
 }
 
 .hébergements img {
-    height: 100%;
-    width: 190px;
-    max-height: 90px;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
