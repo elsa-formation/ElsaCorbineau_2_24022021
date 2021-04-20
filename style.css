@@ -1,7 +1,13 @@
 /*Styles*/
 
-html, main, header, footer, h1, body, input {
-    font-family: 'Raleway', sans-serif;
+html,
+main,
+header,
+footer,
+h1,
+body,
+input {
+    font-family: "Raleway", sans-serif;
     margin: O;
     padding: 0;
     box-sizing: border-box;
@@ -10,30 +16,37 @@ html, main, header, footer, h1, body, input {
 
 img {
     max-width: 100%;
+    max-height: 100%;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
     display: inline-flex;
     justify-content: center;
 }
 
-.fa-star, .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info {
-    color: #0065FC;
+.fa-star,
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog,
+.fa-info {
+    color: #0065fc;
 }
 
 /**********Header**********/
 
 .Header-div {
-list-style: none;
-display: flex;
-justify-content: space-between;
-height: 80px
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
 }
 
 .Header-Img {
-padding : 3px;
-height: 45px;
+    padding: 3px;
+    height: 45px;
 }
 
 .link a {
@@ -43,7 +56,7 @@ height: 45px;
 
 .Sinscrire a {
     font-weight: bold;
-    color: #0065FC;
+    color: #0065fc;
 }
 
 nav ul li {
@@ -51,22 +64,21 @@ nav ul li {
 }
 
 .Hébergements .Activités {
-color: #000000;
+    color: #000000;
 }
 
 .introduction {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .introduction h1 {
-margin-bottom: 5px;
-font-size: 1.5em;
+    margin-bottom: 5px;
+    font-size: 1.5em;
 }
 
 .introduction p {
-font-size: 1em;
+    font-size: 1em;
 }
-
 
 /********** Barre de recherche **********/
 
@@ -81,22 +93,22 @@ font-size: 1em;
 .rechercher span {
     display: flex;
     align-items: center;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     height: 40px;
     padding: 0 20px;
     border-radius: 0.9rem 0 0 0.9rem;
 }
-    
+
 .rechercher input {
     border-radius: 0;
     padding-left: 0.9rem;
-    border: 1px  #F2F2F2;
+    border: 1px #f2f2f2;
     font-weight: 600;
 }
 
 .rechercher button {
     border: none;
-    background-color: #0065FC;
+    background-color: #0065fc;
     color: white;
     border-radius: 0 0.9rem 0.9rem 0;
     cursor: pointer;
@@ -107,16 +119,14 @@ font-size: 1em;
     box-shadow: 1px 1px 1px 1px #b6b6b6;
 }
 
-
 /********** Filters **********/
 
-
 .Filters {
-list-style: none;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .item {
@@ -135,8 +145,8 @@ margin-top: 10px;
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    background-color: #DEEBFF;
-    color: #0065FC;
+    background-color: #deebff;
+    color: #0065fc;
 }
 
 .FiltreText {
@@ -145,14 +155,14 @@ margin-top: 10px;
 }
 
 .item:hover {
-    background-color: #0065FC;
+    background-color: #0065fc;
     color: white;
 }
 
 /**********Vignettes**********/
 
 .hébergements {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 
 .grille-hébergement {
@@ -161,7 +171,7 @@ margin-top: 10px;
     justify-content: space-evenly;
 }
 
-.hébergements .photo  {
+.hébergements .photo {
     padding: 5px;
     background: white;
     width: 30%;
@@ -181,13 +191,13 @@ margin-top: 10px;
 }
 
 .photo:hover {
-    box-shadow: 3px 3px 3px 3px #b6b6b6
+    box-shadow: 3px 3px 3px 3px #b6b6b6;
 }
 
 /**********Populaires**********/
 
 .populaires {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 
 .grille-populaires {
@@ -211,27 +221,72 @@ margin-top: 10px;
 
 /**********Activités**********/
 
-.activités {
-    background-color: #F2F2F2;
+figure {
+    margin: 0;
 }
 
 .grille-activités {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    /* Largeur des colonnes de la grille */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 11rem);
+    gap: 2.5rem;
 }
 
-.activités .photo {
-    padding: 5px;
-    background: white;
-    width: 30%;
+.photo-activite {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto min-content;
 }
 
-.activités img {
+.activite1 {
+    /* grid-row: 1 / span 3; */
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
+.activite2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+.activite3 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+.activite4 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
+.activite5 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+.activite6 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+.activite {
+    box-shadow: 0.5rem 0.5rem 1rem #aaa;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.photo-activite img {
+    min-height: 0;
+    height: 100%;
     width: 100%;
-    height: 12rem;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
 }
 
 /**********Footer**********/
+
+.footer-grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repaet (3, 11rem);
+}
