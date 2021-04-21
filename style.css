@@ -287,6 +287,29 @@ figure {
 
 .footer-grille {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repaet (3, 11rem);
+}
+
+.footer-div {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto min-content;
+}
+
+.a-propos {
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
+
+.nos-hébergements {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
+
+.assistance {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: span 3;
 }
