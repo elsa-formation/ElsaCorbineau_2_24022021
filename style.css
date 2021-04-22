@@ -194,6 +194,10 @@ nav ul li {
     box-shadow: 3px 3px 3px 3px #b6b6b6;
 }
 
+.star-empty {
+    color: grey;
+}
+
 /**********Populaires**********/
 
 .populaires {
@@ -285,13 +289,18 @@ figure {
 
 /**********Footer**********/
 
+.footer-background {
+    background-color: #f2f2f2;
+}
+
 .footer-grille {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repaet (3, 11rem);
+    grid-template-rows: repaet (3, 20rem);
 }
 
 .footer-div {
+    padding: 20px;
     height: 100%;
     display: grid;
     grid-template-rows: auto min-content;
@@ -313,3 +322,4 @@ figure {
     grid-row-start: 1;
     grid-row-end: span 3;
 }
+
