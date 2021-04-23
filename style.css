@@ -19,8 +19,7 @@ img {
     max-height: 100%;
 }
 
-ul,
-li {
+.menu-liste{
     list-style: none;
     display: inline-flex;
     justify-content: center;
@@ -293,32 +292,14 @@ figure {
     background-color: #f2f2f2;
 }
 
-.footer-grille {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repaet (3, 20rem);
-}
-
 .footer-div {
     padding: 20px;
     height: 100%;
     display: grid;
-    grid-template-rows: auto min-content;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.a-propos {
-    grid-row-start: 1;
-    grid-row-end: span 3;
-}
-
-.nos-hébergements {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: span 3;
-}
-
-.assistance {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: span 3;
+.footer-liste {
+    list-style: none;
+    padding-left: 0;
 }
