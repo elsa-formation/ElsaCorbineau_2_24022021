@@ -222,13 +222,16 @@ nav ul li {
 }
 
 .grille-hébergement {
-    float: left;
     background: #f2f2f2;
-    width: 75%;
 }
 
 .grille-populaires {
     background: #f2f2f2;
+}
+
+.centre {
+    display: flex;
+    flex-direction: row;
 }
 
 /**********Activités**********/
