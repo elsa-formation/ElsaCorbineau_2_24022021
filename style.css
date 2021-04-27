@@ -164,6 +164,10 @@ nav ul li {
     background-color: #f2f2f2;
 }
 
+.populaire {
+    background-color: #f2f2f2;
+}
+
 .grille-hébergement {
     display: flex;
     flex-wrap: wrap;
@@ -199,12 +203,7 @@ nav ul li {
 
 /**********Populaires**********/
 
-.populaires {
-    background-color: #f2f2f2;
-}
-
 .grille-populaires {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -220,6 +219,16 @@ nav ul li {
     height: 12rem;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+}
+
+.grille-hébergement {
+    float: left;
+    background: #f2f2f2;
+    width: 75%;
+}
+
+.grille-populaires {
+    background: #f2f2f2;
 }
 
 /**********Activités**********/
