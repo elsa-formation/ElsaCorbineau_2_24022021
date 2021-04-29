@@ -118,6 +118,10 @@ nav ul li {
     box-shadow: 1px 1px 1px 1px #b6b6b6;
 }
 
+:placeholder-shown {
+    color: #000000;
+}
+
 /********** Filters **********/
 
 .Filters {
@@ -198,7 +202,7 @@ nav ul li {
 }
 
 .star-empty {
-    color: grey;
+    color: #c0c0c0;
 }
 
 /**********Populaires**********/
@@ -236,8 +240,6 @@ nav ul li {
 }
 
 .disponibilité {
-    width: 40px;
-    height: 40px;
     border-radius: 20px;
     background: white;
 }
