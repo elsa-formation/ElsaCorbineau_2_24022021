@@ -19,7 +19,7 @@ img {
     max-height: 100%;
 }
 
-.menu-liste{
+.menu-liste {
     list-style: none;
     display: inline-flex;
     justify-content: center;
@@ -168,7 +168,7 @@ nav ul li {
     background-color: #f2f2f2;
 }
 
-.populaire {
+.populaires {
     background-color: #f2f2f2;
 }
 
@@ -215,7 +215,6 @@ nav ul li {
 .populaires .photo {
     padding: 5px;
     background: white;
-    width: 30%;
 }
 
 .populaires img {
@@ -225,23 +224,31 @@ nav ul li {
     border-radius: 10px 10px 0 0;
 }
 
-.grille-hébergement {
-    background: #f2f2f2;
-}
-
-.grille-populaires {
-    background: #f2f2f2;
-}
-
-.bloc-vignettes {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
 .disponibilité {
     border-radius: 20px;
     background: white;
+}
+
+.centre {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+}
+
+.populaire-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.populaires-titre-icone {
+    font-size: 1.7rem;
+}
+
+.ordre-vignettes {
+    display: flex;
+    width: 500px;
 }
 
 /**********Activités**********/
@@ -329,3 +336,13 @@ figure {
     list-style: none;
     padding-left: 0;
 }
+
+/********** ECRANS INFERIEURS A 1200PX **********/
+
+/********** ECRANS INFERIEURS A 992PX **********/
+
+/********** ECRANS INFERIEURS A 768PX **********/
+
+/********** ECRANS INFERIEURS A 600PX **********/
+
+/********** ECRANS INFERIEURS A 480PX **********/
