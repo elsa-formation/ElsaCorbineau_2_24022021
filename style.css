@@ -166,8 +166,8 @@ nav ul li {
     box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem #c0c0c0;
 }
 
-.disponibilité {
-    margin: 0.4rem;
+.information {
+    margin: 1rem 0rem;
 }
 
 /**********Vignettes**********/
@@ -273,6 +273,7 @@ nav ul li {
     display: grid;
     grid-template-columns: 4fr 5fr;
     column-gap: 1rem;
+    height: 10rem;
 }
 
 .populaires-image {
@@ -379,6 +380,10 @@ figure {
     padding-left: 0;
 }
 
+.footer-liste li {
+    margin: 0.9rem 0rem;
+}
+
 /********** ECRANS INFERIEURS A 992PX **********/
 
 @media screen and (max-width: 992px) {
@@ -419,6 +424,10 @@ figure {
     .activite6 {
         grid-column: 3 / span 1;
         grid-row: 2 / span 1;
+    }
+
+    .hébergements .photo {
+        width: 100%;
     }
 }
 
@@ -469,34 +478,8 @@ figure {
         grid-template-rows: repeat(2, 15rem);
     }
 
-    .hebergement1 {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-    }
-
-    .hebergement2 {
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 1;
-    }
-
-    .hebergement3 {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-    }
-
-    .hebergement4 {
-        grid-column: 2 / span 1;
-        grid-row: 2 / span 1;
-    }
-
-    .hebergement5 {
-        grid-column: 1 / span 1;
-        grid-row: 3 / span 1;
-    }
-
-    .hebergement6 {
-        grid-column: 2 / span 1;
-        grid-row: 3 / span 1;
+    .hébergements .photo {
+        width: 47%;
     }
 }
 
@@ -545,55 +528,5 @@ figure {
     .grille-hébergement {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1, 15rem);
-    }
-
-    .hebergement1 {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-    }
-
-    .hebergement2 {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-    }
-
-    .hebergement3 {
-        grid-column: 1 / span 1;
-        grid-row: 3 / span 1;
-    }
-
-    .hebergement4 {
-        grid-column: 1 / span 1;
-        grid-row: 4 / span 1;
-    }
-
-    .hebergement5 {
-        grid-column: 1 / span 1;
-        grid-row: 5 / span 1;
-    }
-
-    .hebergement6 {
-        grid-column: 1 / span 1;
-        grid-row: 6 / span 1;
-    }
-
-    .grille-populaires {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(1, 15rem);
-    }
-
-    .ordre-vignettes1 {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-    }
-
-    .ordre-vignettes2 {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-    }
-
-    .ordre-vignettes3 {
-        grid-column: 1 / span 1;
-        grid-row: 3 / span 1;
     }
 }
