@@ -170,8 +170,9 @@ nav ul li {
     box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem #c0c0c0;
 }
 
-.disponibilité {
-    margin-top: 1px;
+.information {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /**********Vignettes**********/
@@ -372,6 +373,7 @@ figure {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
 }
 
 .footer-liste {
@@ -379,12 +381,16 @@ figure {
     padding-left: 0;
 }
 
+.footer-liste li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 /********** ECRANS INFERIEURS A 992PX - PC **********/
 
 @media screen and (max-width: 992px) {
     header {
         justify-content: space-between;
-        width: 100%;
         padding: 0;
     }
 
@@ -458,15 +464,13 @@ figure {
 /********** ECRANS INFERIEURS A 768PX - TABLETTES **********/
 
 @media screen and (max-width: 768px) {
-    header {
-        justify-content: space-between;
-        width: 100%;
-        padding: 0;
+    .Header-div {
+        margin: 0 0 1.5rem 0;
     }
 
     .grille-activités {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, 15rem);
+        grid-template-rows: repeat(3, 15rem);
     }
 
     .activite1 {
@@ -500,11 +504,19 @@ figure {
     }
 
     main {
-        margin: 0;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .hébergements {
+        background-color: white;
     }
 
     .hébergements .photo {
         width: 100%;
+    }
+
+    .activités {
+        padding: 0 1rem;
     }
 
     .grille-populaires {
@@ -523,25 +535,21 @@ figure {
         border-radius: 0;
     }
 
-    .footer {
-        flex-direction: column;
-        padding-bottom: 0;
-        margin-bottom: 30px;
+    .footer-div {
+        grid-template-columns: 1fr;
     }
 }
 
 /********** ECRANS INFERIEURS A 480PX - SMARTPHONES**********/
 
 @media screen and (max-width: 480px) {
-    header {
-        justify-content: space-between;
-        width: 100%;
-        padding: 0;
+    .Header-div {
+        margin: 0 0 1.5rem 0;
     }
 
     .grille-activités {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1, 15rem);
+        grid-template-rows: repeat(6, 15rem);
     }
 
     .activite1 {
@@ -572,11 +580,5 @@ figure {
     .activite6 {
         grid-column: 1 / span 1;
         grid-row: 6 / span 1;
-    }
-
-    .footer {
-        flex-direction: column;
-        padding-bottom: 0;
-        margin-bottom: 30px;
     }
 }
