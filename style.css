@@ -38,7 +38,6 @@ img {
     color: #0065fc;
 }
 
-header,
 main {
     margin: 1.5rem;
 }
@@ -48,13 +47,29 @@ main {
 .Header-div {
     list-style: none;
     display: flex;
+    align-items: stretch;
     justify-content: space-between;
     height: 80px;
+    padding: 0 1rem;
 }
 
 .Header-Img {
-    padding: 3px;
-    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-liste {
+    margin: 0;
+    height: 100%;
+}
+
+.menu-liste li {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    margin-left: auto;
 }
 
 .link a {
@@ -62,9 +77,16 @@ main {
     text-decoration: none;
 }
 
+.Sinscrire {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
 .Sinscrire a {
     font-weight: bold;
     color: #0065fc;
+    text-decoration: none;
 }
 
 nav ul li {
@@ -86,6 +108,15 @@ nav ul li {
 
 .introduction p {
     font-size: 1em;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    align-self: flex-end;
 }
 
 /********** Barre de recherche **********/
@@ -537,6 +568,38 @@ figure {
 
     .footer-div {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Header-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 40px);
+    }
+
+    .Sinscrire {
+        justify-self: end;
+    }
+
+    .link {
+        grid-row-start: 2;
+        grid-column-end: span 2;
+
+        justify-self: stretch;
+        margin-left: 0;
+    }
+
+    .menu-liste {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .menu-liste li {
+        margin: 0;
+        justify-content: center;
     }
 }
 
