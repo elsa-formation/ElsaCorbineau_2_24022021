@@ -90,11 +90,19 @@ main {
 }
 
 nav ul li {
-    margin: 0 2rem;
+    padding: 0 2rem;
 }
 
 .Hébergements .Activités {
     color: #000000;
+}
+
+.menu-liste li:hover {
+    border-top: #0065fc 2px solid;
+}
+
+.menu-liste li:hover a {
+    color: #0065fc;
 }
 
 .introduction {
@@ -108,15 +116,6 @@ nav ul li {
 
 .introduction p {
     font-size: 1em;
-}
-
-.link {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    align-self: flex-end;
 }
 
 /********** Barre de recherche **********/
@@ -576,10 +575,13 @@ figure {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 40px);
+        row-gap: 1rem;
+        margin-top: 1.5rem;
     }
 
     .Sinscrire {
         justify-self: end;
+        align-self: center;
     }
 
     .link {
@@ -600,6 +602,24 @@ figure {
     .menu-liste li {
         margin: 0;
         justify-content: center;
+    }
+
+    .menu-liste li {
+        border-bottom: #d9d9d9 4px solid;
+        padding-bottom: 1rem;
+    }
+
+    .menu-liste li:hover {
+        border-bottom: #0065fc 4px solid;
+        border-top: none;
+    }
+
+    .Header-div {
+        padding: 0;
+    }
+
+    .Header-Img {
+        margin-left: 1.5rem;
     }
 }
 
