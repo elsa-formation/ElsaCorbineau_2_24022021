@@ -128,7 +128,7 @@ nav ul li {
     display: flex;
 }
 
-.rechercher span {
+.rechercher > span {
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
@@ -142,6 +142,8 @@ nav ul li {
     padding-left: 0.9rem;
     border: 1px #f2f2f2;
     font-weight: 600;
+    border-top: #f2f2f2 2px solid;
+    border-bottom: #f2f2f2 2px solid;
 }
 
 .rechercher button {
@@ -159,6 +161,10 @@ nav ul li {
 
 .rechercher input::placeholder {
     color: black;
+}
+
+.input-loupe {
+    display: none;
 }
 
 /********** Filters **********/
@@ -203,6 +209,13 @@ nav ul li {
 .information {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.fa-info {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
 }
 
 /**********Vignettes**********/
@@ -390,12 +403,11 @@ figure {
 /**********Footer**********/
 
 .footer {
-    margin-top: 10%;
+    margin: 100%;
 }
 
 .footer-background {
     background-color: #f2f2f2;
-    margin: 0.4rem;
 }
 
 .footer-div {
@@ -420,6 +432,7 @@ figure {
 
 @media screen and (max-width: 992px) {
     header {
+        margin-top: 10%;
         justify-content: space-between;
         padding: 0;
     }
@@ -620,6 +633,24 @@ figure {
 
     .Header-Img {
         margin-left: 1.5rem;
+    }
+
+    .input-rechercher {
+        display: none;
+    }
+
+    .input-loupe {
+        display: inline;
+    }
+
+    .rechercher button {
+        border-radius: 0.9rem;
+        width: 2.7rem;
+    }
+
+    .rechercher input {
+        flex-grow: 1;
+        margin-right: -1.5rem;
     }
 }
 
