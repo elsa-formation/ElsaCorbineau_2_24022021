@@ -686,6 +686,10 @@ figure {
         margin: 0 0 1.5rem 0;
     }
 
+    .filtre-titre {
+        width: 100%;
+    }
+
     .grille-activites {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 15rem);
